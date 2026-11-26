@@ -7,17 +7,17 @@ import "./globals.css";
 const manrope = Manrope({ variable: "--font-geist-sans", subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL!),
-  title: "Vikramaditya Dhumal — Independent Developer",
+  title: "Vikramaditya Dhumal",
   description:
     "Vikramaditya Dhumal designs and builds thoughtful, useful digital products.",
   openGraph: {
-    title: "Vikramaditya Dhumal — Independent Developer",
+    title: "Vikramaditya Dhumal",
     description: "Thoughtful, useful digital products, built with care.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vikramaditya Dhumal — Independent Developer",
+    title: "Vikramaditya Dhumal",
     description: "Thoughtful, useful digital products, built with care.",
   },
 };
