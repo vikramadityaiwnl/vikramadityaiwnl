@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171716"/>
+      <stop offset="1" stop-color="#292520"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 494 -720 0 1160 438)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D98235" stop-opacity=".17"/>
+      <stop offset="1" stop-color="#D98235" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0v48" stroke="#F2E9DE" stroke-opacity=".035"/>
+    </pattern>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h1600v900H0z"/>
+  <path fill="url(#glow)" d="M0 0h1600v900H0z"/>
+  <path fill="url(#grid)" d="M0 0h1600v900H0z"/>
+  <path d="M1060 0v900M1204 0v900M1348 0v900M1492 0v900M0 708h1600M0 804h1600" stroke="#F2E9DE" stroke-opacity=".04"/>
+  <g transform="translate(1000 166) scale(.64)" stroke-linecap="round" stroke-linejoin="round">
+    <g fill="none" stroke="#E9E0D5" stroke-width="28" opacity=".92">
+      <path d="m430 52 252 126 126 252-126 252-252 126-252-126L52 430l126-252L430 52Z"/>
+      <path d="M430 52v756M52 430h756M178 178l504 504M682 178 178 682Z"/>
+    </g>
+    <g fill="#D98235">
+      <circle cx="430" cy="52" r="60"/><circle cx="682" cy="178" r="60"/>
+      <circle cx="808" cy="430" r="60"/><circle cx="682" cy="682" r="60"/>
+      <circle cx="430" cy="808" r="60"/><circle cx="178" cy="682" r="60"/>
+      <circle cx="52" cy="430" r="60"/><circle cx="178" cy="178" r="60"/>
+      <circle cx="430" cy="430" r="110" fill="#E89A4A"/>
+    </g>
+  </g>
+  <path d="M118 602h72" stroke="#D98235" stroke-width="3"/>
+  <text x="118" y="523" fill="#F5F0E9" font-family="Inter, Helvetica, Arial, sans-serif" font-size="90" font-weight="600" letter-spacing="-4">veykor</text>
+  <text x="118" y="574" fill="#C9C1B7" font-family="Inter, Helvetica, Arial, sans-serif" font-size="21" font-weight="400" letter-spacing="3.6">agent development environment</text>
+</svg>

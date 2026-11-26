@@ -21,8 +21,8 @@ const fragmentShader = `
     float distanceFromLight = length(offset);
     float glow = 1.0 - smoothstep(0.0, 1.05 + pulse * 0.035, distanceFromLight);
     glow = pow(glow, 1.2);
-    vec3 edge = vec3(0.075, 0.068, 0.064);
-    vec3 center = vec3(0.30, 0.27, 0.25) * (1.0 + pulse * 0.025);
+    vec3 edge = vec3(0.07, 0.07, 0.07);
+    vec3 center = vec3(0.29, 0.29, 0.29) * (1.0 + pulse * 0.025);
     gl_FragColor = vec4(mix(edge, center, glow), 1.0);
   }
 `;
@@ -117,7 +117,7 @@ export function SpotlightBackground() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,#524943_0%,#302b28_48%,#131110_100%)]"
+      className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,#4a4a4a_0%,#2d2d2d_48%,#121212_100%)]"
     >
       <canvas ref={canvasRef} className="block h-full w-full" />
     </div>
