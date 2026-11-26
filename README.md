@@ -10,8 +10,6 @@ I'm Vikramaditya, an independent developer who enjoys turning ideas into thought
 
 **[Say hello ↗](mailto:dhumalvikramaditya287@gmail.com)** &nbsp;&nbsp; / &nbsp;&nbsp; **[LinkedIn ↗](https://www.linkedin.com/in/vikramaditya-dhumal-322a60358/)**
 
-<br />
-
 ## What I enjoy building
 
 I enjoy taking an idea from an early concept to something people can use. That might mean shaping an interface, building the application behind it, or exploring how AI and interactive technology can make an experience more useful.
