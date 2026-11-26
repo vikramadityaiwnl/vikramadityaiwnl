@@ -7,6 +7,10 @@ import {
   siPython,
   siOpenjdk,
   siKotlin,
+  siCplusplus,
+  siFlutter,
+  siArduino,
+  siEspressif,
   siHtml5,
   siCss,
   siReact,
@@ -26,7 +30,7 @@ import {
   siGooglemaps,
   siUnity,
   siGodotengine,
-  siAndroidstudio,
+  siAndroid,
   siGit,
   siGithub,
   siDocker,
@@ -42,6 +46,7 @@ const skills = [
       ["python", siPython],
       ["java", siOpenjdk],
       ["kotlin", siKotlin],
+      ["c++", siCplusplus],
     ],
   },
   {
@@ -58,8 +63,9 @@ const skills = [
     title: "mobile",
     tools: [
       ["react native", siReact],
+      ["flutter", siFlutter],
       ["expo", siExpo],
-      ["android studio", siAndroidstudio],
+      ["android studio", siAndroid],
     ],
   },
   {
@@ -101,6 +107,14 @@ const skills = [
       ["google maps", siGooglemaps],
       ["unity", siUnity],
       ["godot", siGodotengine],
+    ],
+  },
+  {
+    title: "hardware & embedded",
+    tools: [
+      ["esp", siEspressif],
+      ["arduino", siArduino],
+      ["arduino ide", siArduino],
     ],
   },
   {
