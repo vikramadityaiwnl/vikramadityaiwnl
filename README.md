@@ -8,7 +8,7 @@
 
 I'm Vikramaditya, an independent developer who enjoys turning ideas into thoughtful, useful digital products. I've been freelancing since 2020, working across design and development while exploring web, mobile, AI, and interactive experiences.
 
-**[Portfolio ↗](https://vikramadityaiwnl.vercel.app)** &nbsp;&nbsp; / &nbsp;&nbsp; **[Say hello ↗](mailto:dhumalvikramaditya287@gmail.com)** &nbsp;&nbsp; / &nbsp;&nbsp; **[LinkedIn ↗](https://www.linkedin.com/in/vikramaditya-dhumal-322a60358/)**
+**[Portfolio ↗](https://www.vikramadityadhumal.com/)** &nbsp;&nbsp; / &nbsp;&nbsp; **[Say hello ↗](mailto:dhumalvikramaditya287@gmail.com)** &nbsp;&nbsp; / &nbsp;&nbsp; **[LinkedIn ↗](https://www.linkedin.com/in/vikramaditya-dhumal-322a60358/)**
 
 ## What I enjoy building
 
