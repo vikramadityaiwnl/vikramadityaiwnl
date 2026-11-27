@@ -12,18 +12,39 @@ const vertexShader = `
 const fragmentShader = `
   precision mediump float;
   uniform vec2 resolution;
-  uniform float pulse;
+  uniform float time;
 
   void main() {
     vec2 uv = gl_FragCoord.xy / resolution;
-    // Measure both axes in screen-height units so the glow stays circular.
-    vec2 offset = (uv - vec2(0.5)) * vec2(resolution.x / resolution.y, 1.0);
-    float distanceFromLight = length(offset);
-    float glow = 1.0 - smoothstep(0.0, 1.05 + pulse * 0.035, distanceFromLight);
-    glow = pow(glow, 1.2);
-    vec3 edge = vec3(0.07, 0.07, 0.07);
-    vec3 center = vec3(0.29, 0.29, 0.29) * (1.0 + pulse * 0.025);
-    gl_FragColor = vec4(mix(edge, center, glow), 1.0);
+    float aspect = resolution.x / resolution.y;
+    float t = time;
+
+    vec2 warmCenter = vec2(
+      0.5 + sin(t * 0.38) * 0.2,
+      0.5 + cos(t * 0.29) * 0.13
+    );
+    vec2 warmOffset = (uv - warmCenter) * vec2(aspect * 0.72, 1.18);
+    float warmGlow = exp(-dot(warmOffset, warmOffset) * 2.5);
+
+    vec2 amberCenter = vec2(
+      0.5 + cos(t * 0.25 + 1.4) * 0.27,
+      0.52 + sin(t * 0.32 + 0.8) * 0.2
+    );
+    vec2 amberOffset = (uv - amberCenter) * vec2(aspect * 0.9, 1.35);
+    float amberGlow = exp(-dot(amberOffset, amberOffset) * 5.0);
+
+    vec2 hazeCenter = vec2(
+      0.5 + sin(t * 0.18 + 2.2) * 0.18,
+      0.48 + cos(t * 0.23 + 1.1) * 0.16
+    );
+    vec2 hazeOffset = (uv - hazeCenter) * vec2(aspect * 0.58, 1.7);
+    float hazeGlow = exp(-dot(hazeOffset, hazeOffset) * 1.35);
+
+    vec3 color = vec3(0.07);
+    color = mix(color, vec3(0.19), hazeGlow * 0.78);
+    color = mix(color, vec3(0.29), warmGlow * 0.78);
+    color += vec3(0.035) * amberGlow;
+    gl_FragColor = vec4(color, 1.0);
   }
 `;
 
@@ -69,12 +90,12 @@ export function SpotlightBackground() {
     gl.enableVertexAttribArray(position);
     gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
     const resolution = gl.getUniformLocation(program, "resolution");
-    const pulse = gl.getUniformLocation(program, "pulse");
+    const timeUniform = gl.getUniformLocation(program, "time");
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     let frame = 0;
     let startTime = 0;
 
-    function draw(time = 0) {
+    function draw(timestamp = 0) {
       if (!canvas || !gl) return;
       const scale = Math.min(window.devicePixelRatio || 1, 1.5);
       const width = Math.round(canvas.clientWidth * scale);
@@ -85,9 +106,11 @@ export function SpotlightBackground() {
       }
       gl.viewport(0, 0, canvas.width, canvas.height);
       gl.uniform2f(resolution, canvas.width, canvas.height);
-      if (!startTime) startTime = time;
-      const elapsed = reducedMotion.matches ? 0 : (time - startTime) / 1000;
-      gl.uniform1f(pulse, reducedMotion.matches ? 0 : Math.sin(elapsed * 0.45));
+      if (!startTime) startTime = timestamp;
+      const elapsed = reducedMotion.matches
+        ? 0
+        : (timestamp - startTime) / 1000;
+      gl.uniform1f(timeUniform, elapsed);
       gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
       if (!reducedMotion.matches && !document.hidden)
         frame = requestAnimationFrame(draw);
