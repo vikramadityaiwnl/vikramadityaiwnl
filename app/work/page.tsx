@@ -1,10 +1,10 @@
 import { Work } from "@/components/sections/work";
 
 export const metadata = {
-  title: "work — Vikramaditya Dhumal",
+  title: "work — vikramaditya dhumal",
   description: "selected projects and collaborations by vikramaditya dhumal.",
   openGraph: {
-    title: "work — Vikramaditya Dhumal",
+    title: "work — vikramaditya dhumal",
     description: "selected projects and collaborations by vikramaditya dhumal.",
   },
 };

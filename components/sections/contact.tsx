@@ -30,7 +30,7 @@ export function Contact() {
             <span className="break-all">dhumalvikramaditya287@gmail.com</span>
           </a>
           <a
-            href="https://wa.me/918899968330?text=Hi%20Vikram%2C%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect%21"
+            href="https://wa.me/918899968330?text=hi%20vikram%2C%20i%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect%21"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex max-w-full items-center gap-3 text-base font-semibold tracking-[-0.02em] text-[#292521] transition-colors hover:text-[#a34218] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#a34218] sm:text-lg"

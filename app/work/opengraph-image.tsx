@@ -2,7 +2,7 @@ import { createSocialImage, socialSize } from "@/lib/social-image";
 
 export const size = socialSize;
 export const contentType = "image/png";
-export const alt = "Work by Vikramaditya Dhumal";
+export const alt = "work by vikramaditya dhumal";
 
 export default function OpenGraphImage() {
   return createSocialImage(

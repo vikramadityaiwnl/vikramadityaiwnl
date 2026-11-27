@@ -7,18 +7,18 @@ import "./globals.css";
 const manrope = Manrope({ variable: "--font-geist-sans", subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL!),
-  title: "Vikramaditya Dhumal",
+  title: "vikramaditya dhumal",
   description:
-    "Vikramaditya Dhumal designs and builds thoughtful, useful digital products.",
+    "vikramaditya dhumal designs and builds thoughtful, useful digital products.",
   openGraph: {
-    title: "Vikramaditya Dhumal",
-    description: "Thoughtful, useful digital products, built with care.",
+    title: "vikramaditya dhumal",
+    description: "thoughtful, useful digital products, built with care.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vikramaditya Dhumal",
-    description: "Thoughtful, useful digital products, built with care.",
+    title: "vikramaditya dhumal",
+    description: "thoughtful, useful digital products, built with care.",
   },
 };
 export default function RootLayout({ children }: LayoutProps<"/">) {

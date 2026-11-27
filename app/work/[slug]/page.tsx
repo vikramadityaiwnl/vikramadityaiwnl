@@ -34,15 +34,15 @@ export async function generateMetadata({
   const project = projects.find((item) => item.slug === slug);
   if (!project) return {};
   return {
-    title: `${project.name} — Vikramaditya Dhumal`,
+    title: `${project.name} — vikramaditya dhumal`,
     description: project.description,
     openGraph: {
-      title: `${project.name} — Vikramaditya Dhumal`,
+      title: `${project.name} — vikramaditya dhumal`,
       description: project.description,
     },
     twitter: {
       card: "summary_large_image" as const,
-      title: `${project.name} — Vikramaditya Dhumal`,
+      title: `${project.name} — vikramaditya dhumal`,
       description: project.description,
     },
   };
@@ -88,7 +88,7 @@ export default async function ProjectPage({
           {project.image ? (
             <Image
               src={project.image}
-              alt={`Artwork for ${project.name}`}
+              alt={`artwork for ${project.name}`}
               fill
               sizes="(min-width: 1280px) 1200px, 90vw"
               className="object-cover"

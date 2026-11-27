@@ -1,30 +1,30 @@
 <picture>
-  <img src="assets/profile/hero.gif" alt="Vikramaditya Dhumal — building things that feel right." width="100%" />
+  <img src="assets/profile/hero.gif" alt="vikramaditya dhumal — building things that feel right." width="100%" />
 </picture>
 
 <br />
 
-## Curious by nature. A builder at heart.
+## curious by nature. a builder at heart.
 
-I'm Vikramaditya, an independent developer who enjoys turning ideas into thoughtful, useful digital products. I've been freelancing since 2020, working across design and development while exploring web, mobile, AI, and interactive experiences.
+i'm vikramaditya, an independent developer who enjoys turning ideas into thoughtful, useful digital products. i've been freelancing since 2020, working across design and development while exploring web, mobile, ai, and interactive experiences.
 
-**[Portfolio ↗](https://www.vikramadityadhumal.com/)** &nbsp;&nbsp; / &nbsp;&nbsp; **[Say hello ↗](mailto:dhumalvikramaditya287@gmail.com)** &nbsp;&nbsp; / &nbsp;&nbsp; **[LinkedIn ↗](https://www.linkedin.com/in/vikramaditya-dhumal-322a60358/)**
+**[portfolio ↗](https://www.vikramadityadhumal.com/)** &nbsp;&nbsp; / &nbsp;&nbsp; **[say hello ↗](mailto:dhumalvikramaditya287@gmail.com)** &nbsp;&nbsp; / &nbsp;&nbsp; **[linkedin ↗](https://www.linkedin.com/in/vikramaditya-dhumal-322a60358/)**
 
-## What I enjoy building
+## what i enjoy building
 
-I enjoy taking an idea from an early concept to something people can use. That might mean shaping an interface, building the application behind it, or exploring how AI and interactive technology can make an experience more useful.
+i enjoy taking an idea from an early concept to something people can use. that might mean shaping an interface, building the application behind it, or exploring how ai and interactive technology can make an experience more useful.
 
-My work spans independent projects, freelance collaborations, and experiments that help me learn by making. I care about the details that make a product feel considered and approachable.
+my work spans independent projects, freelance collaborations, and experiments that help me learn by making. i care about the details that make a product feel considered and approachable.
 
-## Tools & technologies
+## tools & technologies
 
-These are some of the tools I’ve worked with across apps, experiments, and collaborations. I’m comfortable learning new technologies as a project calls for them, and I enjoy choosing tools that fit the problem.
+these are some of the tools i’ve worked with across apps, experiments, and collaborations. i’m comfortable learning new technologies as a project calls for them, and i enjoy choosing tools that fit the problem.
 
-| Area               | Technologies                                       |
+| area               | technologies                                       |
 | :----------------- | :------------------------------------------------- |
-| **Languages**      | `TypeScript` `JavaScript` `Python` `Java` `Kotlin` |
-| **Frontend**       | `React` `Next.js` `Tailwind CSS` `Three.js`        |
-| **Mobile**         | `React Native` `Expo`                              |
-| **Backend & data** | `Node.js` `Firebase` `PostgreSQL` `MongoDB`        |
-| **Cloud & AI**     | `Google Cloud` `Gemini` `Genkit`                   |
-| **Tools**          | `Git` `GitHub` `Docker`                            |
+| **languages**      | `typescript` `javascript` `python` `java` `kotlin` |
+| **frontend**       | `react` `next.js` `tailwind css` `three.js`        |
+| **mobile**         | `react native` `expo`                              |
+| **backend & data** | `node.js` `firebase` `postgresql` `mongodb`        |
+| **cloud & ai**     | `google cloud` `gemini` `genkit`                   |
+| **tools**          | `git` `github` `docker`                            |

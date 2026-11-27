@@ -42,7 +42,7 @@ export function ProjectCard({ project }: { project: Project }) {
           {project.description}
         </p>
         <ul
-          aria-label="Project category and technologies"
+          aria-label="project category and technologies"
           className="mt-5 flex flex-wrap gap-2"
         >
           <li className="rounded-full bg-[#bc501e]/10 px-3 py-1 text-[11px] font-bold text-[#a34218]">

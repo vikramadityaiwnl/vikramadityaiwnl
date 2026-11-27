@@ -147,8 +147,12 @@ export function About() {
         </h1>
         <div className="mt-8 max-w-2xl space-y-4 text-base leading-[1.8] text-[#55504b] sm:mt-10">
           <p>
-            i’m vikramaditya, an independent developer who enjoys turning ideas
-            into thoughtful digital products.
+            i’m{" "}
+            <span className="font-semibold text-[#d9682d]">
+              vikramaditya dhumal
+            </span>
+            , an independent developer who enjoys turning ideas into thoughtful
+            digital products.
           </p>
           <p>
             i’ve been freelancing since 2020, exploring the space between design
